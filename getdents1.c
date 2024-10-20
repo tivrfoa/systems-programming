@@ -11,11 +11,25 @@ char joined_entries[MAX_JOINED_ENTRIES_LEN + 1] = {0}; // Initialize to zero
 */
 #include <stdio.h>
 #include <unistd.h>
-#include <linux/dirent.h>
+#include <dirent.h>
 #include <sys/syscall.h>
+#include <string.h>
 
 #define MAX_ENTRIES 1024
 #define MAX_JOINED_ENTRIES_LEN 1000
+
+// https://elixir.bootlin.com/linux/v6.11.4/source/fs/readdir.c#L245
+struct linux_dirent {
+	unsigned long	d_ino;
+	unsigned long	d_off;
+	unsigned short	d_reclen;
+	char		d_name[];
+};
+
+// https://elixir.bootlin.com/linux/v6.11.4/source/include/uapi/linux/fcntl.h#L98
+#define AT_FDCWD		-100    /* Special value used to indicate
+                                           openat should use the current
+                                           working directory. */
 
 int main() {
     int dirfd;
