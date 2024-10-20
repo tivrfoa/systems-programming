@@ -27,14 +27,15 @@ int main() {
             continue;
         }
 
-        if (joined_entries_len + strlen(entry->d_name) + 1 > MAX_JOINED_ENTRIES_LEN) {
+		size_t entry_len = strlen(entry->d_name);
+        if (joined_entries_len + entry_len + 1 > MAX_JOINED_ENTRIES_LEN) {
             fprintf(stderr, "Joined entries exceeded maximum length.\n");
             break;
         }
 
         strcat(joined_entries + joined_entries_len, entry->d_name);
         strcat(joined_entries + joined_entries_len, "\n");
-        joined_entries_len += strlen(entry->d_name) + 1;
+        joined_entries_len += entry_len + 1;
     }
 
     closedir(dir);
