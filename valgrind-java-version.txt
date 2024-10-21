@@ -1,0 +1,1031 @@
+==828588== Memcheck, a memory error detector
+==828588== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==828588== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==828588== Command: java -version
+==828588== 
+==828588== Warning: set address range perms: large range [0xa5600000, 0x100000000) (noaccess)
+==828588== Warning: set address range perms: large range [0x59e99000, 0x9ae99000) (noaccess)
+==828588== Warning: set address range perms: large range [0x59e99000, 0x9ae99000) (noaccess)
+==828588== Warning: set address range perms: large range [0x59e99000, 0x9be99000) (noaccess)
+==828588== Thread 2:
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cff508 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfe508 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfd508 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfc508 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfb508 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==  Address 0x4cff4a0 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==  Address 0x4cfe4a0 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==  Address 0x4cfd4a0 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==  Address 0x4cfc4a0 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==  Address 0x4cfb4a0 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cff440 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfe440 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfd440 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfc440 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4F06: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfb440 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74273: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4FBD: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cff420 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7427A: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4FBD: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfe420 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74281: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4FBD: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfd420 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74288: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4FBD: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfc420 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7428F: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F4FBD: Threads::initialize_java_lang_classes(JavaThread*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x64F71BF: Threads::create_vm(JavaVMInitArgs*, bool*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBE1AD: JNI_CreateJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B2CA: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfb420 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74273: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A0969: LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A123A: LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1D4A6: InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DB64: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x17D80CC2: ???
+==828588==    by 0x17D70051: ???
+==828588==  Address 0x4cfecd0 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7427A: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A0969: LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A123A: LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1D4A6: InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DB64: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x17D80CC2: ???
+==828588==    by 0x17D70051: ???
+==828588==  Address 0x4cfdcd0 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74281: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A0969: LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A123A: LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1D4A6: InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DB64: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x17D80CC2: ???
+==828588==    by 0x17D70051: ???
+==828588==  Address 0x4cfccd0 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74288: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A0969: LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A123A: LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1D4A6: InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DB64: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x17D80CC2: ???
+==828588==    by 0x17D70051: ???
+==828588==  Address 0x4cfbcd0 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7428F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A0969: LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A123A: LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1D4A6: InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DB64: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x17D80CC2: ???
+==828588==    by 0x17D70051: ???
+==828588==  Address 0x4cfacd0 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A0969: LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A123A: LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1D4A6: InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DB64: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x17D80CB4: ???
+==828588==    by 0x17D68CC5: ???
+==828588==  Address 0x4cfd3c0 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A0969: LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A123A: LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1D4A6: InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DB64: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x17D80CB4: ???
+==828588==    by 0x17D68CC5: ???
+==828588==  Address 0x4cfc3c0 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A0969: LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x61A123A: LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1D4A6: InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DB64: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x17D80CB4: ???
+==828588==    by 0x17D68CC5: ???
+==828588==  Address 0x4cfb3c0 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x619D708: LinkResolver::resolve_field(fieldDescriptor&, LinkInfo const&, Bytecodes::Code, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x619DCDE: LinkResolver::resolve_field_access(fieldDescriptor&, constantPoolHandle const&, int, methodHandle const&, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1CFD7: InterpreterRuntime::resolve_get_put(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DBBC: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==  Address 0x4cfc9a8 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFE981: InstanceKlass::call_class_initializer(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5EFF7F1: InstanceKlass::initialize_impl(JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x619D708: LinkResolver::resolve_field(fieldDescriptor&, LinkInfo const&, Bytecodes::Code, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x619DCDE: LinkResolver::resolve_field_access(fieldDescriptor&, constantPoolHandle const&, int, methodHandle const&, Bytecodes::Code, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1CFD7: InterpreterRuntime::resolve_get_put(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F1DBBC: InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==  Address 0x4cfb9a8 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+java version "21.0.3" 2024-04-16 LTS
+Java(TM) SE Runtime Environment Oracle GraalVM 21.0.3+7.1 (build 21.0.3+7-LTS-jvmci-23.1-b37)
+Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 21.0.3+7.1 (build 21.0.3+7-LTS-jvmci-23.1-b37, mixed mode, sharing)
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cff910 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfe910 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfd910 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfc910 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfb910 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cff8a0 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfe8a0 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfd8a0 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfc8a0 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x50ADAC2: start_thread (pthread_create.c:442)
+==828588==    by 0x513EA03: clone (clone.S:100)
+==828588==  Address 0x4cfb8a0 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfd758 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfc758 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==    by 0x487EE48: ThreadJavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfb758 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74273: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cff6d8 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7427A: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfe6d8 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74281: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfd6d8 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D74288: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfc6d8 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7428F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfb6d8 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cff6c8 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfe6c8 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfd6c8 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfc6c8 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D70179: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D7012F: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfb6c8 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cff6b8 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfe6b8 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfd6b8 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfc6b8 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x487B501: JavaMain (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/libjli.so)
+==828588==  Address 0x4cfb6b8 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7342E: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==  Address 0x4cff610 is on thread 2's stack
+==828588==  4096 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73435: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==  Address 0x4cfe610 is on thread 2's stack
+==828588==  8192 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7343C: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==  Address 0x4cfd610 is on thread 2's stack
+==828588==  12288 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D73443: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==  Address 0x4cfc610 is on thread 2's stack
+==828588==  16384 bytes below stack pointer
+==828588== 
+==828588== Invalid write of size 4
+==828588==    at 0x17D7344A: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D701C3: ???
+==828588==    by 0x17D70051: ???
+==828588==    by 0x17D68CC5: ???
+==828588==    by 0x5F25204: JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F26959: JavaCalls::call_special(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Handle, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5F3BC11: JavaThread::allocate_threadObj(Handle, char const*, bool, JavaThread*) (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FBED73: attach_current_thread.part.0 (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==    by 0x5FB9F50: jni_DestroyJavaVM (in /home/lesco/Softwares/graalvm-jdk-21.0.3+7.1/lib/server/libjvm.so)
+==828588==  Address 0x4cfb610 is on thread 2's stack
+==828588==  20480 bytes below stack pointer
+==828588== 
+==828588== 
+==828588== HEAP SUMMARY:
+==828588==     in use at exit: 20,145,206 bytes in 10,043 blocks
+==828588==   total heap usage: 13,388 allocs, 3,345 frees, 20,820,667 bytes allocated
+==828588== 
+==828588== LEAK SUMMARY:
+==828588==    definitely lost: 977 bytes in 5 blocks
+==828588==    indirectly lost: 2,487 bytes in 15 blocks
+==828588==      possibly lost: 156,616 bytes in 64 blocks
+==828588==    still reachable: 19,985,126 bytes in 9,959 blocks
+==828588==         suppressed: 0 bytes in 0 blocks
+==828588== Rerun with --leak-check=full to see details of leaked memory
+==828588== 
+==828588== For lists of detected and suppressed errors, rerun with: -s
+==828588== ERROR SUMMARY: 150 errors from 63 contexts (suppressed: 0 from 0)

@@ -22,7 +22,9 @@ You get some fascinating things when you look at programs at that level."
   Jeremy Allison
 
 
-Gem Playlist here:
+Gem Playlist here, with the brilliant Andrew Tridgell
+
+It deserves much more views!!!
 
 Open Source Software (OSS) development by Andrew Tridgell
 https://www.youtube.com/watch?v=XnyCUBqFmJo&list=PLIFKZ_FgGvgB17LQ_jG3p_dE0nFsKEfyZ&index=1&pp=iAQB
